@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html">Web Studio</a>
+      <a class="logo link" href="./index.html"
+        ><span class="web-logo">Web</span>Studio</a
+      >
       <nav>
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="list nav">
+          <li><a class="link" href="">Студія</a></li>
+          <li><a class="link" href="">Портфоліо</a></li>
+          <li><a class="link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list nav contacts">
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <section>
-        <ul>
+        <h2 class="hidden">Кнопки</h2>
+        <ul class="list">
           <li><button type="button">Все</button></li>
           <li><button type="button">Веб-сайти</button></li>
           <li><button type="button">Додатки</button></li>
@@ -31,14 +51,15 @@
           <li><button type="button">Маркетинг</button></li>
         </ul>
       </section>
-      <section>
-        <ul>
+      <section class="service">
+        <h2>Список послуг</h2>
+        <ul class="list">
           <li>
             <section>
               <img
                 src="./image/laptop.jpg"
                 alt="Відкритий сайт на ноутбуці"
-                width=""
+                width="370"
               />
               <h3>Технокряк</h3>
               <p>Веб-сайт</p>
@@ -51,7 +72,7 @@
                 alt="Два баскетболісти"
                 width="370"
               />
-              <h3>Постер New Orlean vs Golden Star</h3>
+              <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
               <p>Дизайн</p>
             </section>
           </li>
@@ -62,7 +83,7 @@
                 alt="Логотип ресторану"
                 width="370"
               />
-              <h3>Ресторан Seafood</h3>
+              <h3>Ресторан <span lang="en">Seafood</span></h3>
               <p>Додаток</p>
             </section>
           </li>
@@ -73,14 +94,14 @@
                 alt="Чорні навушники"
                 width="370"
               />
-              <h3>Проєкт Prime</h3>
+              <h3>Проєкт <span lang="en">Prime</span></h3>
               <p>Маркетинг</p>
             </section>
           </li>
           <li>
             <section>
               <img src="./image/boxes.jpg" alt="Дві коробочки" width="370" />
-              <h3>Проєкт Boxes</h3>
+              <h3>Проєкт <span lang="en">Boxes</span></h3>
               <p>Додаток</p>
             </section>
           </li>
@@ -91,7 +112,7 @@
                 alt="Монітор комп'ютера з відкритим сайтом"
                 width="370"
               />
-              <h3>Inspiration Has No Borders</h3>
+              <h3><span lang="en">Inspiration Has No Borders</span></h3>
               <p>Веб-сайт</p>
             </section>
           </li>
@@ -102,14 +123,14 @@
                 alt="Відкритий журнал"
                 width="370"
               />
-              <h3>Видання Limited Edition</h3>
+              <h3>Видання <span lang="en">Limited Edition</span></h3>
               <p>Дизайн</p>
             </section>
           </li>
           <li>
             <section>
               <img src="./image/label.jpg" alt="Етикетка, ярлик" width="370" />
-              <h3>Проєкт LAB</h3>
+              <h3>Проєкт <span lang="en">LAB</span></h3>
               <p>Маркетинг</p>
             </section>
           </li>
@@ -120,7 +141,7 @@
                 alt="Людина друкує на ноутбуці"
                 width="370"
               />
-              <h3>Growing Business</h3>
+              <h3><span lang="en">Growing Business</span></h3>
               <p>Додаток</p>
             </section>
           </li>
@@ -128,12 +149,20 @@
       </section>
     </main>
     <footer>
-      <a href="/">WebStudio</a>
+      <a class="logo link" href="./index.html"
+        ><span class="web-logo">Web</span>Studio</a
+      >
       <address>
-        <ul>
-          <li>695 Park Ave, New York, NY 10065, United States</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+12127724150">+1 212-772-4150</a></li>
+        <ul class="list">
+          <li>м. Київ, пр-т Лесі Українки, 26</li>
+          <li>
+            <a class="link contacts" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="link contacts" href="tel:+12127724150">+1 212-772-4150</a>
+          </li>
         </ul>
       </address>
     </footer>
