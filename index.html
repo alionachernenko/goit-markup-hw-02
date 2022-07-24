@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,64 +21,70 @@
   </head>
   <body>
     <header>
-      <a class="logo link" href="/"><span class="web-logo">Web</span>Studio</a>
+      <a class="logo" href="/"
+        ><span class="web-logo-header">Web</span>Studio</a
+      >
       <nav>
         <ul class="list nav">
-          <li><a class="link" href="">Студія</a></li>
+          <li><a class="link" href="./index.html">Студія</a></li>
           <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="link" href="">Контакти</a></li>
         </ul>
       </nav>
       <ul class="list contacts">
         <li>
-          <a class="header-mail" href="mailto:info@devstudio.com"
+          <a class="link contacts" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link contacts" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
     <main>
       <section class="hero">
-        <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="main-button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="button main-button">
+          Замовити послугу
+        </button>
       </section>
-      <section>
-        <h2>Переваги компанії</h2>
-        <ul class="list benefits">
+      <section class="benefits">
+        <h2 class="benefits-title">Переваги компанії</h2>
+        <ul class="list">
           <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <h3 class="benefit-title">Увага до деталей</h3>
+            <p class="benefit-paragraph">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <h3 class="benefit-title">Пунктуальність</h3>
+            <p class="benefit-paragraph">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>
+            <h3 class="benefit-title">Планування</h3>
+            <p class="benefit-paragraph">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <h3 class="benefit-title">Сучасні технології</h3>
+            <p class="benefit-paragraph">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чим ми займаємося</h2>
+      <section class="services">
+        <h2 class="services-title">Чим ми займаємося</h2>
         <ul class="list">
           <li>
             <img src="./image/first.jpg" alt="розробка додатків" width="370" />
@@ -100,68 +106,70 @@
         </ul>
       </section>
       <section class="team">
-        <h2>Наша команда</h2>
+        <h2 class="team-title">Наша команда</h2>
         <ul class="list">
           <li>
-            <section>
+            <section class="team-card">
               <img
                 src="./image/IgorDemyanenko.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
               />
-              <h3 lang="ru">Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
+              <h3 class="team-card-title" lang="ru">Ігор Дем'яненко</h3>
+              <p class="card-paragraph">Product Designer</p>
             </section>
           </li>
 
           <li>
-            <section>
+            <section class="team-card">
               <img
                 src="./image/OlgaRepina.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
               />
-              <h3 lang="ru">Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
+              <h3 class="team-card-title" lang="ru">Ольга Рєпіна</h3>
+              <p class="card-paragraph">Frontend Developer</p>
             </section>
           </li>
           <li>
-            <section>
+            <section class="team-card">
               <img
                 src="./image/NikolaiTarasov.jpg"
                 alt="Микола Тарасов"
                 width="270"
               />
-              <h3 lang="ru">Микола Тарасов</h3>
-              <p>Marketing</p>
+              <h3 class="team-card-title" lang="ru">Микола Тарасов</h3>
+              <p class="card-paragraph">Marketing</p>
             </section>
           </li>
           <li>
-            <section>
+            <section class="team-card">
               <img
                 src="./image/MikhailYermakov.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
               />
-              <h3 lang="ru">Михайло Єрмаков</h3>
-              <p>UI Designer</p>
+              <h3 class="team-card-title" lang="ru">Михайло Єрмаков</h3>
+              <p class="card-paragraph">UI Designer</p>
             </section>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a class="logo link" href="/"><span class="web-logo">Web</span>Studio</a>
-      <address>
+    <footer class="footer">
+      <a class="logo" href="/"
+        ><span class="web-logo-footer">Web</span>Studio</a
+      >
+      <address class="address">
         <ul class="list">
-          <li>м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="location">м. Київ, пр-т Лесі Українки, 26</li>
           <li>
-            <a class="contacts" href="mailto:info@example.com"
+            <a class="link contacts" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
           <li>
-            <a class="contacts" href="tel:+12127724150">+1 212-772-4150</a>
+            <a class="link contacts" href="tel:+12127724150">+1 212-772-4150</a>
           </li>
         </ul>
       </address>

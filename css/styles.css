@@ -1,64 +1,107 @@
-/* переменные */
-:root {
 
+:root {
+    --main-color: #212121;
+    --accent-color: #2196F3;
+    --hero-footer-background-color: #2F303A;
 }
 
-/* стили тела документа */
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+}
+
+
+
+.web-logo-header {
     color: #000000;
 }
-
-
-/* логотип */
-.web-logo {
-    color: #2196F3;
+.web-logo-footer {
+    color:#FFFFFF
 }
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
+    color: var(--accent-color); 
+    text-decoration: none;
 }
 
-/* ссылки */
-.link,
-.header-mail {
+
+
+.link {
     text-decoration: none;
-    color: #000000;
+    color: var(--main-color);
 }
 .link:hover,
 .link:focus,
 .header-mail:hover,
 .header-mail:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
+.address {
+    font-style: normal;
+}
 .contacts {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
 }
+.location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
 
+.hero, .footer {
+    background-color: var(--hero-footer-background-color);
+}
 
-/* заголовки */
-h1 {
-    color: #000000;
+.hero-title {
+    color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: center;
+    line-height: 1.45;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
-h2 {
+.card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.team-card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+.card-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.benefits-title, 
+.services-title, 
+.team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
 }
 /* списки */
 .list {
@@ -69,16 +112,21 @@ h2 {
     font-size: 14px;
 }
 
-/* кнопки */
-button {
-    background-color: #F5F4FA;
-    color: #000000;
-    border: transparent;
-    cursor: pointer;
+
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
 }
-button:hover,
+.filter-button:hover,
 .main-button {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: #FFFFFF;
     border: none;
     box-shadow: 0px 1px 2px 0px #00000014;
@@ -89,26 +137,27 @@ button:hover,
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    background: #2196F3;
+    border-radius: 4px;
 }
 
-/* переваги */
-.benefits h3 {
-    color: #212121;
+
+.benefit-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
-/* абзаци */
-p {
-    color: #757575;
-    font-weight: 400;
+.benefit-paragraph {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    color: #757575;
 }
+
 
 .team {
     background-color: #F5F4FA;
