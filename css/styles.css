@@ -3,29 +3,45 @@
     --main-color: #212121;
     --accent-color: #2196F3;
     --hero-footer-background-color: #2F303A;
+    --paragraph-color: #757575;
+    --header-logo-color: #000000;
+    --footer-logo-color: #FFFFFF;
+    --location-color: #FFFFFF;
+    --hero-title-color: #FFFFFF;
+    --main-background-color: #FFFFFF;
+    --main-button-color: #FFFFFF;
+    --filter-button-color: #F5F4FA;
+    --team-color: #F5F4FA;
+    --team-card-background: #FFFFFF;
+    --footer-contacts: rgba(255, 255, 255, 0.6);
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
 }
 
 
 
-.web-logo-header {
-    color: #000000;
-}
-.web-logo-footer {
-    color:#FFFFFF
+.web-logo {
+    color: var(--accent-color);
 }
 
-.logo {
+.logo-header {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    color: var(--accent-color); 
+    color: var(--header-logo-color);
     text-decoration: none;
 }
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    color: var(--footer-logo-color);
+    text-decoration: none;
+}
+
+
 
 
 
@@ -48,7 +64,15 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--paragraph-color);
+    text-decoration: none;
+}
+.contacts-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--footer-contacts);
     text-decoration: none;
 }
 .location {
@@ -56,7 +80,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--location-color);
 }
 
 .hero, .footer {
@@ -64,7 +88,7 @@ body {
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--hero-title-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.45;
@@ -79,19 +103,22 @@ body {
     letter-spacing: 0.06em;
     color: var(--main-color);
 }
-
-.team-card-title {
+.card-paragraph {
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
+}
+.team-subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
-.card-paragraph {
-    font-size: 16px;
+.team-professional {
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--paragraph-color);
 }
 
 .benefits-title, 
@@ -114,31 +141,34 @@ body {
 
 
 .filter-button {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    background: #F5F4FA;
+    background: var(--filter-button-color);
     border-radius: 4px;
     border: none;
 }
 .filter-button:hover,
+.filter-button:focus,
 .main-button {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--main-button-color);
     border: none;
-    box-shadow: 0px 1px 2px 0px #00000014;
 }
 .main-button {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background: #2196F3;
+    background: var(--accent-color);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -155,19 +185,13 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--paragraph-color);
 }
 
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--team-color);
 }
-.team section {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-.service section {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+.team-card {
+    background: var(--team-card-background);
 }

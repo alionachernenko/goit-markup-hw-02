@@ -8,21 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html"
-        ><span class="web-logo-header">Web</span>Studio</a
+      <a class="logo-header" href="./index.html"
+        ><span class="web-logo" lang="en">Web</span>Studio</a
       >
       <nav>
         <ul class="list nav">
@@ -45,9 +39,9 @@
       </ul>
     </header>
     <main>
-      <section class="filter">
-        <h2 class="filter-title">Фільтр</h2>
-        <ul class="list">
+      <section class="service">
+        <h1 class="service-title" hidden>Послуги</h1>
+        <ul class="list list-buttons">
           <li><button class="filter-button" type="button">Все</button></li>
           <li>
             <button class="filter-button" type="button">Веб-сайти</button>
@@ -58,108 +52,101 @@
             <button class="filter-button" type="button">Маркетинг</button>
           </li>
         </ul>
-      </section>
-      <section class="service">
-        <h2 class="service-title">Список послуг</h2>
-        <ul class="list">
+        <ul class="list list-service">
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/laptop.jpg"
                 alt="Відкритий сайт на ноутбуці"
                 width="370"
               />
-              <h3 class="card-title">Технокряк</h3>
+              <h2 class="card-title">Технокряк</h3>
               <p class="card-paragraph">Веб-сайт</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/sportsmen.jpg"
                 alt="Два баскетболісти"
                 width="370"
               />
-              <h3 class="card-title">
+              <h2 class="card-title">
                 Постер <span lang="en">New Orlean vs Golden Star</span>
-              </h3>
+              </h2>
               <p class="card-paragraph">Дизайн</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/seafood.jpg"
                 alt="Логотип ресторану"
                 width="370"
               />
-              <h3 class="card-title">
+              <h2 class="card-title">
                 Ресторан <span lang="en">Seafood</span>
-              </h3>
+              </h2>
               <p class="card-paragraph">Додаток</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/headphones.jpg"
                 alt="Чорні навушники"
                 width="370"
               />
-              <h3 class="card-title">Проєкт <span lang="en">Prime</span></h3>
+              <h2 class="card-title">Проєкт <span lang="en">Prime</span></h2>
               <p class="card-paragraph">Маркетинг</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img src="./image/boxes.jpg" alt="Дві коробочки" width="370" />
-              <h3 class="card-title">Проєкт <span lang="en">Boxes</span></h3>
+              <h2 class="card-title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="card-paragraph">Додаток</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/monitor.jpg"
                 alt="Монітор комп'ютера з відкритим сайтом"
                 width="370"
               />
-              <h3 class="card-title">
-                <span lang="en">Inspiration Has No Borders</span>
-              </h3>
+              <h2 class="card-title" lang="en">Inspiration Has No Borders</h2>
               <p class="card-paragraph">Веб-сайт</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/magazine.jpg"
                 alt="Відкритий журнал"
                 width="370"
               />
-              <h3 class="card-title">
+              <h2 class="card-title">
                 Видання <span lang="en">Limited Edition</span>
-              </h3>
+              </h2>
               <p class="card-paragraph">Дизайн</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img src="./image/label.jpg" alt="Етикетка, ярлик" width="370" />
-              <h3 class="card-title">Проєкт <span lang="en">LAB</span></h3>
+              <h2 class="card-title">Проєкт <span lang="en">LAB</span></h2>
               <p class="card-paragraph">Маркетинг</p>
             </section>
           </li>
           <li>
-            <section class="card">
+            <section class="service-card">
               <img
                 src="./image/hands_laptop.jpg"
                 alt="Людина друкує на ноутбуці"
                 width="370"
               />
-              <h3 class="card-title">
-                <span lang="en">Growing Business</span>
-              </h3>
+              <h2 class="card-title" lang="en">Growing Business</h2>
               <p class="card-paragraph">Додаток</p>
             </section>
           </li>
@@ -167,19 +154,19 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="web-logo-footer">Web</span>Studio</a
+      <a class="logo-footer" href="./index.html"
+        ><span class="web-logo">Web</span>Studio</a
       >
       <address class="address">
         <ul class="list">
           <li class="location">м. Київ, пр-т Лесі Українки, 26</li>
           <li>
-            <a class="link contacts" href="mailto:info@example.com"
+            <a class="link contacts-footer" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
           <li>
-            <a class="link contacts" href="tel:+12127724150">+1 212-772-4150</a>
+            <a class="link contacts-footer" href="tel:+12127724150">+1 212-772-4150</a>
           </li>
         </ul>
       </address>
