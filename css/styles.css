@@ -141,7 +141,7 @@ body {
 
 
 .filter-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -160,7 +160,7 @@ body {
     border: none;
 }
 .main-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     align-items: center;
