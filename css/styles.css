@@ -22,7 +22,99 @@ body {
     color: var(--main-color);
 }
 
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 93px;
+    display: flex;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.list.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.list.contacts :not(:last-child){
+    margin-right: 50px;
+}
+
+
+.hero .container {
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 252px;
+    padding-bottom: 204px;
+    padding-left: 252px;
+    
+}
+
+.benefits .container .list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-right: 0;
+    padding-bottom: 94px;
+    padding-left: 0;
+}
+
+.services .container .list {
+    display: flex;
+    justify-content: space-between;
+}
+.benefit {
+    width: 270px;
+}
+.nav{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.list.contacts .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.services .container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.team .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team .container .list {
+    display: flex;
+    justify-content: space-between;
+}
+footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .web-logo {
     color: var(--accent-color);
@@ -35,12 +127,20 @@ body {
     text-decoration: none;
 }
 .logo-footer {
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     color: var(--footer-logo-color);
     text-decoration: none;
 }
 
+footer .list {
+    margin-top: 20px;
+}
+
+address .list :not(:last-child) {
+    margin-bottom: 9px;
+}
 .nav .link.current {
     color: var(--accent-color)
 }
@@ -88,6 +188,8 @@ body {
 }
 
 .hero-title {
+    margin-bottom: 26px;
+    text-align: center;
     color: var(--hero-title-color);
     font-weight: 900;
     font-size: 44px;
@@ -97,6 +199,8 @@ body {
 }
 
 .card-title {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;    
@@ -124,12 +228,19 @@ body {
 .benefits-title, 
 .services-title, 
 .team-title {
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
+
+.services-title,
+.team-title {
+    margin-bottom: 50px;
+}
+
 /* списки */
 .list {
     list-style-type: none;
@@ -139,8 +250,36 @@ body {
     font-size: 14px;
 }
 
+.service {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.list-buttons {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.list-buttons :not(:last-child) {
+    margin-right: 8px;
+}
+
+.list-service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.list-service:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
 
 .filter-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -168,6 +307,13 @@ body {
     cursor: pointer;
 }
 .main-button {
+    height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 216px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -181,6 +327,8 @@ body {
 
 
 .benefit-title{
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -199,4 +347,38 @@ body {
 
 .team {
     background-color: var(--team-color);
+}
+
+.professional-card {
+    width: 270px;
+    background-color: var(--team-card-background);
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+
+.professional-description {
+    margin-top: 30px;
+}
+
+.team-subtitle {
+    padding-bottom: 10px;
+}
+
+img {
+    display: block;
+}
+
+.card-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
 }
