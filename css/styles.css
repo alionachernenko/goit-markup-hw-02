@@ -251,8 +251,8 @@ address .list :not(:last-child) {
 }
 
 .service {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .list-buttons {
