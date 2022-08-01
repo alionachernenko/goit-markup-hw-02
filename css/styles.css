@@ -13,7 +13,8 @@
     --filter-button-color: #F5F4FA;
     --team-color: #F5F4FA;
     --team-card-background: #FFFFFF;
-    --footer-contacts: rgba(255, 255, 255, 0.6);
+    --footer-contacts: rgba(255, 255, 255, 0.6); 
+    --border-color: #ECECEC;
 }
 
 body {
@@ -374,11 +375,11 @@ img {
     padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
-    border-bottom: 1px solid #ECECEC;
-    border-left: 1px solid #ECECEC;
-    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-color);
 }
